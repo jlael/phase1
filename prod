@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="styles/product.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="breadcrumb">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="#">Category 1</a></li>
+        <li>Product 1</li>
+      </ul>
+    </nav>
+    <h1>Product Details</h1>
+  </header>
+
+  <main>
+    <section class="product-details">
+      <img src="assets/product1.jpg" alt="Product 1" class="product-image">
+      <h2>Product 1</h2>
+      <p class="description">This is a detailed description of Product 1.</p>
+      <p class="price">$19.99</p>
+      <button class="add">Add to Cart</button>
+    </section>
+
+    <aside class="shopping-list">
+      <h2>Shopping List</h2>
+      <div class="cart-item">
+        <label for="quantity1">Product 1:</label>
+        <input type="number" id="quantity1" value="1" min="1">
+      </div>
+      <button class="checkout">Checkout</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+
+  <script src="scripts/product.js"></script>
+</body>
+</html>

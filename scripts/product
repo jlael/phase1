@@ -1,0 +1,25 @@
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+    const addToCartButton = document.querySelector('.add-to-cart');
+    if (addToCartButton) {
+      addToCartButton.addEventListener('click', () => {
+        const productName = document.querySelector('.product-details h2').textContent;
+        alert(`Added ${productName} `);
+      });
+    }
+
+    const checkoutButton = document.querySelector('.checkout');
+    if (checkoutButton) {
+      checkoutButton.addEventListener('click', () => {
+        const quantityInput = document.querySelector('#quantity1');
+        if (quantityInput && quantityInput.tagName === 'INPUT') {
+          const quantity = quantityInput.value;
+          alert(`Proceeding : ${quantity}`);
+        } else {
+          console.error('Quantity input not found');
+        }
+      });
+    }
+  });

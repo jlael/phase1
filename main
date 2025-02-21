@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dummy Shopping Website</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="breadcrumb">
+        <li><a href="main.html">Home</a></li>
+      </ul>
+    </nav>
+    <h1>Welcome to Our Store</h1>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <div class="product" onclick="window.location.href='prod.html'">
+        <img src="assets/product1.jpg" alt="Product 1" class="thumbnail">
+        <h2>Product 1</h2>
+        <p>$19.99</p>
+        <button class="add">Add to Cart</button>
+      </div>
+      <div class="product" onclick="window.location.href='prod.html'">
+        <img src="assets/product2.jpg" alt="Product 2" class="thumbnail">
+        <h2>Product 2</h2>
+        <p>$29.99</p>
+        <button class="add">Add to Cart</button>
+      </div>
+      <div class="product" onclick="window.location.href='prod.html'">
+        <img src="assets/product3.jpg" alt="Product 3" class="thumbnail">
+        <h2>Product 3</h2>
+        <p>$39.99</p>
+        <button class="add">Add to Cart</button>
+      </div>
+    </section>
+
+    <aside class="shopping-list">
+      <h2>Shopping List</h2>
+      <div class="cart-item">
+        <label for="quantity1">Product 1:</label>
+        <input type="number" id="quantity1" value="1" min="1">
+      </div>
+      <div class="cart-item">
+        <label for="quantity2">Product 2:</label>
+        <input type="number" id="quantity2" value="1" min="1">
+      </div>
+      <button class="checkout">Checkout</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 </p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
