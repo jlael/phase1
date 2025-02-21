@@ -2,9 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
-    const addToCartButton = document.querySelector('.add-to-cart');
-    if (addToCartButton) {
-      addToCartButton.addEventListener('click', () => {
+    const addToCartButton = document.querySelector('.add');
+    if (addButton) {
+      addButton.addEventListener('click', () => {
         const productName = document.querySelector('.product-details h2').textContent;
         alert(`Added ${productName} `);
       });
